@@ -1,0 +1,20 @@
+platform :ios, '11.0'
+swift_version = '5.3'
+use_frameworks!
+
+def import_pods
+  #pod 'SnapKit'
+  #pod 'Nuke'
+  #pod 'BonMot'
+  pod 'SwiftyUserDefaults', '4.0.0'
+  pod 'RealmSwift'
+  pod 'Alamofire', '~> 5.2'
+  pod 'Moya'
+  pod 'KeychainAccess'
+  pod 'SwiftyJSON'
+  pod 'ObjectMapper'
+end
+
+target 'Day4Sample' do
+  import_pods
+end
