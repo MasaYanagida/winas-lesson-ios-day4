@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5d9-VZ-Aux">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Contents View Controller-->
+        <scene sceneID="At6-48-pRP">
+            <objects>
+                <viewController id="5d9-VZ-Aux" customClass="ContentsViewController" customModule="Day4Homework" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cPp-Tk-YhA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5b7-bp-YXa">
+                                <rect key="frame" x="278" y="64" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="2mO-5z-BRX"/>
+                                    <constraint firstAttribute="height" constant="48" id="BAN-Lg-rgP"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.14901960780000001" green="0.51372549020000002" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="accountButtonTouchUpInside:" destination="5d9-VZ-Aux" eventType="touchUpInside" id="hPy-Xg-2EW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AFM-Pb-WQC">
+                                <rect key="frame" x="346" y="64" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="a3Q-OS-rRK"/>
+                                    <constraint firstAttribute="width" constant="48" id="zfH-Om-3uL"/>
+                                </constraints>
+                                <state key="normal" title="📡"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.14901960780000001" green="0.51372549020000002" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="reloadButtonTouchUpInside:" destination="5d9-VZ-Aux" eventType="touchUpInside" id="Zkx-Nj-dqz"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6p0-KD-X1n">
+                                <rect key="frame" x="0.0" y="132" width="414" height="730"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="H2d-Sl-k5z"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6p0-KD-X1n" firstAttribute="trailing" secondItem="H2d-Sl-k5z" secondAttribute="trailing" id="7ol-Zw-vOR"/>
+                            <constraint firstItem="6p0-KD-X1n" firstAttribute="top" secondItem="5b7-bp-YXa" secondAttribute="bottom" constant="20" id="E56-Ws-2TU"/>
+                            <constraint firstItem="H2d-Sl-k5z" firstAttribute="trailing" secondItem="AFM-Pb-WQC" secondAttribute="trailing" constant="20" id="EuD-7X-qFG"/>
+                            <constraint firstItem="AFM-Pb-WQC" firstAttribute="top" secondItem="H2d-Sl-k5z" secondAttribute="top" constant="20" id="GEr-Hc-g2y"/>
+                            <constraint firstItem="AFM-Pb-WQC" firstAttribute="leading" secondItem="5b7-bp-YXa" secondAttribute="trailing" constant="20" id="Y8l-fS-jyD"/>
+                            <constraint firstItem="6p0-KD-X1n" firstAttribute="leading" secondItem="H2d-Sl-k5z" secondAttribute="leading" id="Yh2-Ev-uzm"/>
+                            <constraint firstItem="H2d-Sl-k5z" firstAttribute="bottom" secondItem="6p0-KD-X1n" secondAttribute="bottom" id="rsK-iJ-5em"/>
+                            <constraint firstItem="5b7-bp-YXa" firstAttribute="top" secondItem="H2d-Sl-k5z" secondAttribute="top" constant="20" id="sKc-0U-bFR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="6p0-KD-X1n" id="KCl-hp-WQv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pVc-Bu-UNZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="437.68115942028987" y="-163.39285714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
