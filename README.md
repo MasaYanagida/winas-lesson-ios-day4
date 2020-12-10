@@ -3,7 +3,7 @@
 
 ## 課題
 Day4Homeworkプロジェクトにコードを記述して、以下のようなアプリを作ってください。
-https://user-images.githubusercontent.com/34995624/101751280-70557c00-3b13-11eb-92c8-40b9e19b3dc9.gif
+![Sample](https://user-images.githubusercontent.com/34995624/101751280-70557c00-3b13-11eb-92c8-40b9e19b3dc9.gif)
 
 **要件**
 
