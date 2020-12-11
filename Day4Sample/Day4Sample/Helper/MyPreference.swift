@@ -14,6 +14,31 @@ import KeychainAccess
 
 class MyPreference: NSObject {
     static let shared = MyPreference()
+    
+    private let userIdKey: String = "com.winas-lesson.ios.day4.Day4Sample.userId"
+    var userId: String {
+        set {
+            let keychain = Keychain()
+            keychain[userIdKey] = newValue
+        }
+        get {
+            let keychain = Keychain()
+            if let userId = keychain[userIdKey] {
+                return userId
+            } else {
+                return ""
+            }
+        }
+    }
+    
+    var isFirstLaunch: Bool {
+        set {
+            Defaults[.isFirstLaunch] = newValue
+        }
+        get {
+            return Defaults[.isFirstLaunch]
+        }
+    }
 }
 
 extension DefaultsKeys {

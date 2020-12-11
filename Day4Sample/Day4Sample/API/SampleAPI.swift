@@ -85,7 +85,7 @@ struct SampleNetwork {
     
     static func request(
         target: SampleAPI,
-        success successCallback: @escaping (_ text: String?/*json: JSON?*/, _ allHeaderFields: [AnyHashable : Any]?) -> Void,
+        success successCallback: @escaping (_ /*text: String?*/json: JSON?, _ allHeaderFields: [AnyHashable : Any]?) -> Void,
         error errorCallback: @escaping (_ statusCode: Int) -> Void,
         failure failureCallback: @escaping (Moya.MoyaError) -> Void
         ) -> Cancellable
@@ -99,9 +99,9 @@ struct SampleNetwork {
                     if (res.statusCode >= 300) {
                         successCallback(nil, headerFields)
                     } else {
-                        //let json = try JSON(response.mapJSON())
-                        let content = try response.mapString()
-                        successCallback(content, headerFields)
+                        let json = try JSON(response.mapJSON())
+                        //let content = try response.mapString()
+                        successCallback(json, headerFields)
                     }
                 }
                 catch let error {
