@@ -14,6 +14,37 @@ import KeychainAccess
 
 class MyPreference: NSObject {
     static let shared = MyPreference()
+    var userIdKey: String?
+    var userPasswordKey: String?
+    
+    var userId: String {
+        set {
+            let keychain = Keychain()
+            keychain[userIdKey ?? ""] = newValue
+        }
+        get {
+            let keychain = Keychain()
+            if let userId = keychain[userIdKey ?? ""] {
+                return userId
+            } else {
+                return ""
+            }
+        }
+    }
+    var userPassword: String {
+        set {
+            let keychain = Keychain()
+            keychain[userPasswordKey ?? ""] = newValue
+        }
+        get {
+            let keychain = Keychain()
+            if let userPassword = keychain[userPasswordKey ?? ""] {
+                return userPassword
+            } else {
+                return ""
+            }
+        }
+    }
 }
 
 extension DefaultsKeys {

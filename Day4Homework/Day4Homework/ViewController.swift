@@ -21,6 +21,8 @@ class ViewController: UIViewController {
         // TODO : save ID&Password into UserDefaults, Keychain and Realm(Models/Account.swift)
         
         let controller = ContentsViewController.fromStoryboard()
+        controller.id = idField.text ?? ""
+        controller.password = passwordField.text ?? ""
         self.swapRootViewController(to: controller)
     }
 }
