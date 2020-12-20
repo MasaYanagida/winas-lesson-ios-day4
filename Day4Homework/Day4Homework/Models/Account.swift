@@ -13,5 +13,7 @@ import RealmSwift
 
 class Account: Object {
     // TODO : implement
+    @objc dynamic var  name = ""
+    @objc dynamic var password = ""
     
 }

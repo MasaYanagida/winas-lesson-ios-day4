@@ -26,6 +26,8 @@
 		33A20C932581EEEC009AE1D8 /* ContentsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33A20C922581EEEC009AE1D8 /* ContentsViewController.storyboard */; };
 		33A20C972581EFC5009AE1D8 /* UIView+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A20C962581EFC5009AE1D8 /* UIView+Util.swift */; };
 		33A20C9A2581F190009AE1D8 /* UIViewController+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A20C992581F190009AE1D8 /* UIViewController+Util.swift */; };
+		EFA4FBE5258F37990026321D /* ContentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA4FBE4258F37990026321D /* ContentTableViewCell.swift */; };
+		EFA4FBE9258F37D70026321D /* ContentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFA4FBE8258F37D70026321D /* ContentTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +53,8 @@
 		33A20C992581F190009AE1D8 /* UIViewController+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Util.swift"; sourceTree = "<group>"; };
 		CF44BF016E18A9A31D08B7D7 /* Pods_Day4Homework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Day4Homework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6947C6ACC12C6F44692D010 /* Pods-Day4Homework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Day4Homework.release.xcconfig"; path = "Target Support Files/Pods-Day4Homework/Pods-Day4Homework.release.xcconfig"; sourceTree = "<group>"; };
+		EFA4FBE4258F37990026321D /* ContentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentTableViewCell.swift; sourceTree = "<group>"; };
+		EFA4FBE8258F37D70026321D /* ContentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContentTableViewCell.xib; sourceTree = "<group>"; };
 		F0039EFFEC8CB14DDBEA5264 /* Pods-Day4Homework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Day4Homework.debug.xcconfig"; path = "Target Support Files/Pods-Day4Homework/Pods-Day4Homework.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,6 +91,7 @@
 		33A20C4E2581EC56009AE1D8 /* Day4Homework */ = {
 			isa = PBXGroup;
 			children = (
+				EFA4FBE3258F37760026321D /* Components */,
 				33A20C732581ED74009AE1D8 /* Services */,
 				33A20C6E2581ED4A009AE1D8 /* API */,
 				33A20C692581ED02009AE1D8 /* Models */,
@@ -191,6 +196,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		EFA4FBE3258F37760026321D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				EFA4FBE4258F37990026321D /* ContentTableViewCell.swift */,
+				EFA4FBE8258F37D70026321D /* ContentTableViewCell.xib */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -253,6 +267,7 @@
 				33A20C932581EEEC009AE1D8 /* ContentsViewController.storyboard in Resources */,
 				33A20C5C2581EC57009AE1D8 /* LaunchScreen.storyboard in Resources */,
 				33A20C662581EC9B009AE1D8 /* master-list.json in Resources */,
+				EFA4FBE9258F37D70026321D /* ContentTableViewCell.xib in Resources */,
 				33A20C592581EC57009AE1D8 /* Assets.xcassets in Resources */,
 				33A20C572581EC56009AE1D8 /* Main.storyboard in Resources */,
 			);
@@ -318,6 +333,7 @@
 				33A20C522581EC56009AE1D8 /* SceneDelegate.swift in Sources */,
 				33A20C8F2581EEAE009AE1D8 /* StoryboardInstantiable.swift in Sources */,
 				33A20C6B2581ED1D009AE1D8 /* Content.swift in Sources */,
+				EFA4FBE5258F37990026321D /* ContentTableViewCell.swift in Sources */,
 				33A20C972581EFC5009AE1D8 /* UIView+Util.swift in Sources */,
 				33A20C752581ED7E009AE1D8 /* Service.swift in Sources */,
 			);
