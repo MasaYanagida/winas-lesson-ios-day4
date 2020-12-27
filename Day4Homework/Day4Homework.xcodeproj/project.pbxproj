@@ -26,6 +26,7 @@
 		33A20C932581EEEC009AE1D8 /* ContentsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33A20C922581EEEC009AE1D8 /* ContentsViewController.storyboard */; };
 		33A20C972581EFC5009AE1D8 /* UIView+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A20C962581EFC5009AE1D8 /* UIView+Util.swift */; };
 		33A20C9A2581F190009AE1D8 /* UIViewController+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A20C992581F190009AE1D8 /* UIViewController+Util.swift */; };
+		EBA1C5962598E88A00E89EAB /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA1C5952598E88A00E89EAB /* RealmService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		33A20C992581F190009AE1D8 /* UIViewController+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Util.swift"; sourceTree = "<group>"; };
 		CF44BF016E18A9A31D08B7D7 /* Pods_Day4Homework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Day4Homework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6947C6ACC12C6F44692D010 /* Pods-Day4Homework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Day4Homework.release.xcconfig"; path = "Target Support Files/Pods-Day4Homework/Pods-Day4Homework.release.xcconfig"; sourceTree = "<group>"; };
+		EBA1C5952598E88A00E89EAB /* RealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
 		F0039EFFEC8CB14DDBEA5264 /* Pods-Day4Homework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Day4Homework.debug.xcconfig"; path = "Target Support Files/Pods-Day4Homework/Pods-Day4Homework.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,6 +138,7 @@
 			children = (
 				33A20C742581ED7E009AE1D8 /* Service.swift */,
 				33A20C782581ED8E009AE1D8 /* ContentService.swift */,
+				EBA1C5952598E88A00E89EAB /* RealmService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 				33A20C9A2581F190009AE1D8 /* UIViewController+Util.swift in Sources */,
 				33A20C812581EDDA009AE1D8 /* Account.swift in Sources */,
 				33A20C522581EC56009AE1D8 /* SceneDelegate.swift in Sources */,
+				EBA1C5962598E88A00E89EAB /* RealmService.swift in Sources */,
 				33A20C8F2581EEAE009AE1D8 /* StoryboardInstantiable.swift in Sources */,
 				33A20C6B2581ED1D009AE1D8 /* Content.swift in Sources */,
 				33A20C972581EFC5009AE1D8 /* UIView+Util.swift in Sources */,
