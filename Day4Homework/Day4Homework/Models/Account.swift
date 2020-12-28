@@ -12,6 +12,6 @@ import RealmSwift
 // MARK: Account
 
 class Account: Object {
-    // TODO : implement
-    
+    @objc dynamic var id : String = ""
+    @objc dynamic var password : String = ""
 }
