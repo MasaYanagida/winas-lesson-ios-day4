@@ -25,6 +25,23 @@ class ContentService {
         failure: ((_ error: NSError?, _ statusCode: Int?) -> Void)? = { _, _ in }
         )
     {
-        // TODO
+        _ = SampleNetwork.request(target: .getList,
+            success:{ json, _ in
+                guard let safeJson = json else {return}
+                DispatchQueue.main.async {
+                    if let dataArray = Mapper<Content>().mapArray(JSONObject: safeJson.arrayObject) {
+                        completion?(dataArray)
+                    }else{
+                        failure?(nil, nil)
+                    }
+                }
+            },
+            error: { statusCode in
+              failure?(nil, statusCode)
+            },
+            failure: { error in
+              failure?(nil, nil)
+            }
+        )
     }
 }
